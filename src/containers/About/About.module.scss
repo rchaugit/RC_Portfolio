@@ -1,0 +1,25 @@
+@import "../../utils/globals.scss";
+
+.About {
+    > * {
+        height: 60vh;
+    }
+    &_one {
+        &__img {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    &_two {
+        &__img {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+    &_three {
+        &__img {
+            width: 100%;
+            height: 60vh;
+        }
+    }
+}

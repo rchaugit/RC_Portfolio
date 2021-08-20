@@ -1,0 +1,47 @@
+@import "../../utils/globals.scss";
+
+.Landing {
+    > * {
+        width: 100vw;
+        height: 80vh;
+    }
+    &_intro {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-weight: 700;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-color: black;
+        color: white;
+        &__desc {
+            .span {
+                .ityped-cursor {
+                    color: blue;
+                    animation: blink 1s infinite;
+                }
+            }
+        }
+    }
+    &_about {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: black;
+    }
+
+    &_port {
+        display: flex;
+        flex-direction: column;
+        font-size: 40px;
+        font-weight: 700;
+        align-items: center;
+        justify-content: center;
+        background-color: black;
+        color: white;
+    }
+}
