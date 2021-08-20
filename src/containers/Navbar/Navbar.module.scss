@@ -19,12 +19,22 @@
     &_menu {
         display: flex;
         align-items: center;
+
+        @include mobile {
+            display: none;
+        }
+
         &__obj {
+            color: white;
+            text-decoration: none;
             padding-left: 20px;
             padding-right: 20px;
         }
     }
     &_hamburger {
+        @include desktop {
+            display: none;
+        }
         width: 32px;
         height: 25px;
         padding: 15px;

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Landing.module.scss";
 import { init } from "ityped";
 import { useEffect, useRef } from "react";
+import image1 from "../../assets/texture.jpg";
 
 function Landing() {
     const textRef = useRef();
@@ -9,15 +10,19 @@ function Landing() {
         init(textRef.current, {
             showCursor: true,
             backSpeed: 60,
-            strings: ["Developer", "Audio Engineer", "Musician"],
+            strings: ["Jr Developer", "Audio Eng"],
         });
     }, []);
     return (
         <div className={styles.Landing}>
             <div className={styles.Landing_intro}>
-                <img className={styles.Landing_intro__img} alt="introimg"></img>
-                <p className={styles.Landing_intro__title}>Richard Chau</p>
-                <p className={styles.Landing_intro__desc}>
+                <img
+                    className={styles.Landing_intro__img}
+                    src={image1}
+                    alt="introimg"
+                ></img>
+                <p className={styles.Landing_intro__title}>
+                    Richard Chau <br />
                     <span ref={textRef}></span>
                 </p>
             </div>

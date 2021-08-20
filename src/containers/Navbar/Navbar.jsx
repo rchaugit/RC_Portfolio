@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,10 +12,18 @@ function Navbar() {
         <nav className={classes.join(" ")}>
             <div className={styles.Navbar_logo}>Logo RC</div>
             <div className={styles.Navbar_menu}>
-                <p className={styles.Navbar_menu__obj}>Home</p>
-                <p className={styles.Navbar_menu__obj}>Portfolio</p>
-                <p className={styles.Navbar_menu__obj}>About</p>
-                <p className={styles.Navbar_menu__obj}>Contact</p>
+                <Link to="/" className={styles.Navbar_menu__obj}>
+                    Home
+                </Link>
+                <Link to="/portfolio" className={styles.Navbar_menu__obj}>
+                    Portfolio
+                </Link>
+                <Link to="/about" className={styles.Navbar_menu__obj}>
+                    About
+                </Link>
+                <Link to="/contact" className={styles.Navbar_menu__obj}>
+                    Contact
+                </Link>
             </div>
             <div
                 className={styles.Navbar_hamburger}

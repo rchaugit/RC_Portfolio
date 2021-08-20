@@ -1,6 +1,9 @@
 @import "../../utils/globals.scss";
 
 .Landing {
+    @include mobile {
+        flex-direction: column;
+    }
     > * {
         width: 100vw;
         height: 80vh;
@@ -14,13 +17,22 @@
         align-items: flex-end;
         background-color: black;
         color: white;
-        &__desc {
-            .span {
-                .ityped-cursor {
-                    color: blue;
-                    animation: blink 1s infinite;
-                }
+        &__img {
+            position: absolute;
+            width: 100vw;
+            height: 75vh;
+            @include mobile {
+                object-fit: cover;
             }
+        }
+        &__title {
+            position: absolute;
+            @include mobile {
+                font-size: 34px;
+            }
+        }
+        &__desc {
+            position: relative;
         }
     }
     &_about {
@@ -32,6 +44,9 @@
         justify-content: center;
         background-color: white;
         color: black;
+        @include mobile {
+            font-size: 24px;
+        }
     }
 
     &_port {
@@ -43,5 +58,8 @@
         justify-content: center;
         background-color: black;
         color: white;
+        @include mobile {
+            font-size: 24px;
+        }
     }
 }
