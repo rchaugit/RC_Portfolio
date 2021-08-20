@@ -15,7 +15,7 @@ function Landing() {
     return (
         <div className={styles.Landing}>
             <div className={styles.Landing_intro}>
-                <img className={styles.Landing_intro__img}></img>
+                <img className={styles.Landing_intro__img} alt="introimg"></img>
                 <p className={styles.Landing_intro__title}>Richard Chau</p>
                 <p className={styles.Landing_intro__desc}>
                     <span ref={textRef}></span>
