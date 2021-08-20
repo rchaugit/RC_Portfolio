@@ -7,8 +7,8 @@ import Footer from "./containers/Footer";
 
 import styles from "./App.module.scss";
 
-import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+// import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
     return (

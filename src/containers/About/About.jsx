@@ -8,13 +8,25 @@ function About() {
     return (
         <div className={styles.About}>
             <div className={styles.About_one}>
-                <img className={styles.About_one__img} src={section1}></img>
+                <img
+                    className={styles.About_one__img}
+                    alt="img1"
+                    src={section1}
+                ></img>
             </div>
             <div className={styles.About_two}>
-                <img className={styles.About_two__img} src={section2}></img>
+                <img
+                    className={styles.About_two__img}
+                    alt="img2"
+                    src={section2}
+                ></img>
             </div>
             <div className={styles.About_three}>
-                <img className={styles.About_three__img} src={section3}></img>
+                <img
+                    className={styles.About_three__img}
+                    alt="img3"
+                    src={section3}
+                ></img>
             </div>
         </div>
     );
