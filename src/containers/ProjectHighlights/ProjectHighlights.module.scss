@@ -1,0 +1,28 @@
+@import "../../utils/globals.scss";
+
+.ProjectHighlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px 20px 30px;
+    &_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-gap: 15px;
+    }
+    &_collapse {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__is-open {
+            color: red;
+        }
+        &_cards {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            grid-gap: 15px;
+        }
+    }
+}

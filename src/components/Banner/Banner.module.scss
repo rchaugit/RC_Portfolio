@@ -1,0 +1,26 @@
+@import "../../utils/globals.scss";
+
+.Banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    &_txt {
+        padding-left: 20px;
+        display: flex;
+        font-weight: 800;
+        color: $cream;
+        z-index: 1;
+        padding-bottom: 0;
+    }
+    &_desc {
+        color: $cream;
+        padding-top: 0;
+        padding-left: 20px;
+        height: 200px;
+        width: 100%;
+    }
+}

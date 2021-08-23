@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./Navbar.module.scss";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+
+import icon from "../../assets/favicon_io/android-chrome-512x512.png";
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,21 +11,13 @@ function Navbar() {
 
     return (
         <nav className={classes.join(" ")}>
-            <div className={styles.Navbar_logo}>Logo RC</div>
-            <div className={styles.Navbar_menu}>
-                <Link to="/" className={styles.Navbar_menu__obj}>
-                    Home
-                </Link>
-                <Link to="/portfolio" className={styles.Navbar_menu__obj}>
-                    Portfolio
-                </Link>
-                <Link to="/about" className={styles.Navbar_menu__obj}>
-                    About
-                </Link>
-                <Link to="/contact" className={styles.Navbar_menu__obj}>
-                    Contact
-                </Link>
-            </div>
+            <img src={icon} className={styles.Navbar_logo} alt="RC Logo"></img>
+
+            <ul className={styles.Navbar_list}>
+                <li className={styles.Navbar_list__item}>Portfolio</li>
+                <li className={styles.Navbar_list__item}>About</li>
+                <li className={styles.Navbar_list__item}>Contact</li>
+            </ul>
             <div
                 className={styles.Navbar_hamburger}
                 onClick={() => setMenuOpen(!menuOpen)}

@@ -1,4 +1,9 @@
+$black: #272727;
+$cream: #fff8f0;
+$blue: #1481ba;
+
 $mwidth: 768px;
+$dwidth: 1200px;
 
 @mixin mobile {
     @media (max-width: #{$mwidth}) {
@@ -6,8 +11,14 @@ $mwidth: 768px;
     }
 }
 
+@mixin laptop {
+    @media (min-width: #{$mwidth}) {
+        @content;
+    }
+}
+
 @mixin desktop {
-    @media (min-width: 769px) {
+    @media (min-width: #{$dwidth}) {
         @content;
     }
 }

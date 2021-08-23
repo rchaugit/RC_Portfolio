@@ -4,12 +4,25 @@ import styles from "./Portfolio.module.scss";
 function Portfolio() {
     return (
         <div className={styles.Portfolio}>
-            <div className={styles.Portfolio_item}>
-                <p className={styles.Portfolio_item__txt}>MothDX Lims</p>
+            <h3>Portfolio</h3>
+            <div className={styles.Portfolio_projects}>
+                <div>
+                    <img alt="1"></img>
+                    <h3>1</h3>
+                </div>
+                <div>
+                    <img alt="2"></img>
+                    <h3>2</h3>
+                </div>
+                <div>
+                    <img alt="3"></img>
+                    <h3>3</h3>
+                </div>
+                <div>
+                    <img alt="4"></img>
+                    <h3>4</h3>
+                </div>
             </div>
-            <div className={styles.Portfolio_item}>ecommerce</div>
-            <div className={styles.Portfolio_item}>Morse code</div>
-            <div className={styles.Portfolio_item}>Calculator</div>
         </div>
     );
 }
