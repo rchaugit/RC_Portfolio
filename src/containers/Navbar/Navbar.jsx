@@ -8,7 +8,7 @@ import {
     faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { BrowserRouter as Router, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Link } from "react-router-dom";
 
 import icon from "../../assets/favicon_io/android-chrome-512x512.png";
 
@@ -32,13 +32,13 @@ function Navbar() {
                 <FontAwesomeIcon
                     className={styles.Navbar_socials__obj}
                     icon={faLinkedin}
-                    size="2x"
+                    size="1x"
                     color="white"
                 />
                 <FontAwesomeIcon
                     className={styles.Navbar_socials__obj}
                     icon={faGithub}
-                    size="2x"
+                    size="1x"
                     color="white"
                 />
             </div>

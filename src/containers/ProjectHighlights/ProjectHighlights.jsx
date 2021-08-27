@@ -35,7 +35,7 @@ function ProjectHighlights() {
                     trigger={
                         <FontAwesomeIcon
                             icon={faCaretSquareDown}
-                            size="1.5x"
+                            size="1x"
                             color="black"
                         />
                     }
