@@ -6,9 +6,9 @@
     height: 180px;
     width: 240px;
     display: flex;
-    transition: width 0.9s;
+    transition: width 0.7s;
     &:hover {
-        width: 400px;
+        width: 450px;
         .HighlightCard_textbox {
             visibility: visible;
         }

@@ -1,28 +1,58 @@
 @import "../../utils/globals.scss";
 
 .ProjectHighlights {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px 30px 20px 30px;
-    &_cards {
+    @include mobile {
         display: flex;
         flex-direction: column;
         align-items: center;
-        grid-gap: 15px;
-    }
-    &_collapse {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        &__is-open {
-            color: red;
-        }
-        &_cards {
+        padding: 0px 30px 20px 30px;
+        min-height: 450px;
+        &_container {
             display: flex;
             flex-direction: column;
             align-items: center;
-            grid-gap: 15px;
+            &__cards {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                grid-gap: 15px;
+            }
+            &__collapse {
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &___cards {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    grid-gap: 15px;
+                }
+            }
+        }
+    }
+    @include laptop {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        &_container {
+            &__cards {
+                display: flex;
+                grid-gap: 100px;
+            }
+            &__collapse {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                &___cards {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    grid-gap: 15px;
+                }
+            }
         }
     }
 }

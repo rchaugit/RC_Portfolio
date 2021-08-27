@@ -13,10 +13,10 @@ function App() {
             <Navbar />
             <div className={styles.App}>
                 <Switch>
-                    <Route>
+                    <Route exact path="/">
                         <Landing />
                     </Route>
-                    <Route>
+                    <Route path="/portfolio">
                         <Portfolio />
                     </Route>
                 </Switch>
